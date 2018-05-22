@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for Bishop Briggs" />
+  <meta name="author" content="Elizabeth Stauffer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.min.css" />
+  <!-- OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <!-- END OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation" id="briggs-navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+        <img src="./assets/images/white-b.png">
+        </a>
+        <a id="main-menu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="about.html">ABOUT</a>
+          <a class="navbar-item" href="discography.html">DISCOGRAPHY</a>
+          <a class="navbar-item" href="media.html">MEDIA</a>
+          <a class="navbar-item" href="store.html">STORE</a>
+          <a class="navbar-item" href="tour.html">TOUR</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <img src="./assets/images/logotype-black.svg"/>
+    <img src="./assets/images/about/bishop-briggs-headshot.jpg" alt="Briggs Headshot"/>
+
+    <section class="section">
+      <div class="container">
+        <p>Sarah Grace McLaughlin was born in London to parents from Bishopbriggs,
+          Scotland which inspired her professional name. At age four, she moved to
+          Tokyo with her family. She sang in public for the first time at a Tokyo
+          karaoke bar, and immediately realized she wanted to continue performing
+          throughout her life.</p><br>
+        <p>Growing up with the city's karaoke bar traditions and hearing music ranging
+          from Motown musicians to The Beatles at home also influenced her to pursue
+          music. She started writing her own songs at age seven, which she would
+          perform for her family. She moved to Hong Kong at age 10, where she had her
+          formative years and lived until she was 18. After graduating from Hong Kong
+          International School she moved to Los Angeles, California, and attended
+          college at Musician's Institute.</p></br>
+      </div>
+
+<style>
+  h2.title {
+    text-align: left;
+  }
+</style>
+
+      <div class="container">
+        <h2 class="title">Awards include:</h2>
+        <div class="columns">
+          <div class="column">
+            <ul class="menu-list">
+              <li>
+                Singer of the Year
+              </li>
+              <li>
+                Best Lightshow of 2017
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="menu-list">
+              <li>
+                2017 MTV Newbie of the Year
+              </li>
+              <li>
+                Breakout Artist of 2017
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./assets/javascripts/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    console.log('jquery is enabled');
+  });
+</script>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for Bishop Briggs" />
+  <meta name="author" content="Elizabeth Stauffer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Store</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.min.css" />
+  <!-- OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <!-- END OPTIONAL IMPORTS -->
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation" id="briggs-navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+        <img src="./assets/images/white-b.png">
+
+        </a>
+        <a id="main-menu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="about.html">ABOUT</a>
+          <a class="navbar-item" href="discography.html">DISCOGRAPHY</a>
+          <a class="navbar-item" href="media.html">MEDIA</a>
+          <a class="navbar-item" href="store.html">STORE</a>
+          <a class="navbar-item" href="tour.html">TOUR</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-banner">
+      <img src="./assets/images/store/merch-banner.png" />
+    </div>
+
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Filter by:</h1>
+        <ul class="merch-controls">
+           <li data-filter="all">
+              <img src="./assets/images/store/all-btn.png" /> </li>
+           <li data-filter="1">
+              <img src="./assets/images/store/apparel-btn.png" /> </li>
+           <li data-filter="2">
+              <img src="./assets/images/store/art-btn.png" /> </li>
+           <li data-filter="3">
+              <img src="./assets/images/store/music-btn.png" /> </li>
+        </ul>
+
+        <style>
+          .filtr-item {
+            width: 25%;
+          }
+          @media screen and (max-width: 720px){
+            .filtr-item {
+              width: 100%;
+            }
+          }
+        </style>
+
+        <div class="filtr-container">
+          <div class="filtr-item" data-category="1" data-sort="value">
+            <img src="../assets/images/store/tshirt.jpg" alt="tshirt">
+              <h2>Bishop Briggs T-Shirt<br>$25</br></h2>
+              <a href="https://shop.bishopbriggs.com/products/bishop-head-tour-t-shirt">
+                <img class="cart-btn" src="../assets/images/store/add-to-cart.png"> </a>
+          </div>
+          <div class="filtr-item" data-category="1" data-sort="value">
+            <img src="../assets/images/store/hat.png" alt="hat">
+              <h2>Bishop Briggs Hat<br>$20</br></h2>
+              <a href="https://shop.bishopbriggs.com/collections/all/products/bishop-head-dad-hat">
+                <img class="cart-btn" src="../assets/images/store/add-to-cart.png"> </a>
+          </div>
+          <div class="filtr-item" data-category="2" data-sort="value">
+            <img src="../assets/images/store/poster.jpg" alt="poster">
+              <h2>Concert Poster<br>$30</br></h2>
+              <a href="https://mobile.twitter.com/thatgirlbishop/status/746348159333502976?s=09">
+                <img class="cart-btn" src="../assets/images/store/add-to-cart.png"> </a>
+          </div>
+          <div class="filtr-item" data-category="3" data-sort="value">
+            <img src="../assets/images/store/signed-cd.png" alt="signed cd">
+              <h2>Autographed CD<br>$45</br></h2>
+              <a href="https://shop.bishopbriggs.com/products/church-of-scars-litho-digital-album?variant=12066037104709">
+                <img class="cart-btn" src="../assets/images/store/add-to-cart.png"> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <script src="../assets/javascripts/jquery.min.js"></script>
+  <script src="../assets/javascripts/plugins/jquery.filterizr.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      console.log('jquery is enabled');
+      $('.filtr-container').filterizr({});
+    });
+  </script>
+</html>
